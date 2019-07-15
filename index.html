@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Catch the drake!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="landing__page">
+      <div class="container--title">
+        <h1>Catch the draaaake!</h1>
+      </div>
+      <div class="container--menu">
+        <p class="time--display background" id="time">
+          0:20
+        </p>
+        <button
+          onclick="startGame()"
+          class="button button--start"
+          id="startButton"
+        >
+          Start!
+        </button>
+        <span class="score background">0</span>
+      </div>
+      <div class="game">
+        <div class="tree tree1">
+          <div class="drake"></div>
+        </div>
+        <div class="tree tree2">
+          <div class="drake"></div>
+        </div>
+        <div class="tree tree3">
+          <div class="drake"></div>
+        </div>
+        <div class="tree tree4">
+          <div class="drake"></div>
+        </div>
+        <div class="tree tree5">
+          <div class="drake"></div>
+        </div>
+        <div class="tree tree6">
+          <div class="drake"></div>
+        </div>
+        <div class="tree tree7">
+          <div class="drake"></div>
+        </div>
+        <div class="tree tree8">
+          <div class="drake"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container--footer">
+      <form action="" class="save__score" id="score">
+        <input
+          id="name"
+          class="score--input"
+          type="text"
+          placeholder="Enter your nickname"
+          name="name"
+          required
+          autocomplete="off"
+        />
+        <button id="submit" class="score--submit">Save your score</button>
+      </form>
+    </div>
+    <div class="container--ranking">
+      <h1 class="ranking--title">RANKING</h1>
+      <ul class="ranking--plates">
+        <li><p>Loading...</p></li>
+      </ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
